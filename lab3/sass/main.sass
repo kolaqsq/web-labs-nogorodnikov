@@ -7,8 +7,8 @@
 $green: #00FF19
 $red: #FF0000
 $yellow: #FFF500
-$blue: #000AFF
-$magenta: #D663FF
+$blue: #00fff3
+$magenta: #ff00bf
 
 .main-page
   display: flex
@@ -44,3 +44,27 @@ $magenta: #D663FF
   justify-content: space-between
   box-sizing: border-box
   width: 100%
+  padding-top: 1%
+
+.title
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  justify-content: center
+
+.title :first-child
+  margin-bottom: 1%
+
+.title :last-child
+  padding-top: 1.5%
+
+.title__sub-title
+  align-items: center
+  margin: 0
+  font-size: 1vmax
+
+.title__title
+  align-items: center
+  margin: 0
+  font-size: 2.5vmax
+  border: 1vmax solid $magenta

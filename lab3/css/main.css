@@ -41,6 +41,35 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
+  padding-top: 1%;
+}
+
+.title {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.title :first-child {
+  margin-bottom: 1%;
+}
+
+.title :last-child {
+  padding-top: 1.5%;
+}
+
+.title__sub-title {
+  align-items: center;
+  margin: 0;
+  font-size: 1vmax;
+}
+
+.title__title {
+  align-items: center;
+  margin: 0;
+  font-size: 2.5vmax;
+  border: 1vmax solid #ff00bf;
 }
 
 /*# sourceMappingURL=main.css.map */
