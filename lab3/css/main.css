@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Zum-Zum";
+  src: url("../fonts/ALS-Zum-Zum-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.main-page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  font-family: Zum-Zum, monospace;
+  background-color: #00FF19;
+  color: #FF0000;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1%;
+  background-color: #FFF500;
+}
+
+.header__menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
