@@ -7,6 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <script src="https://sourse.xakplant.ru/lib/stickjaw/0.3.0/stickjaw.min.js"></script>
+    <script>
+        var SJ_setiings = {
+            options: {
+                hlw: true, // Height as width
+                wlh: true, // Width as height
+                hlt: true, // Width of the target element (target id is the same as for height)
+                wlt: true, // Height of the target element (target id is the same as for width)
+                alo: true, // All elements as one (height)
+            },
+            settings: {
+                windowResize: true,
+                writeHystory: true
+            }
+        }
+        var sj = new SJ(SJ_setiings);
+    </script>
 
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
@@ -498,46 +514,123 @@
         <h1 class="title__title">JS и CSS фреймворки</h1>
     </div>
     <div class="article">
-        <h3 class="article__title">Что такое JS фреймворки</h3>
-        <p class="article__text">Гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга
-            гинга </p>
+        <h3 class="article__title">Что такое JS фреймворки?</h3>
+        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam. A condimentum vitae
+            sapien pellentesque habitant morbi tristique senectus et. Ullamcorper velit sed ullamcorper morbi tincidunt
+            ornare massa. At in tellus integer feugiat scelerisque varius morbi enim. Tortor condimentum lacinia quis
+            vel eros. Tortor vitae purus faucibus ornare suspendisse sed nisi. Vulputate odio ut enim blandit volutpat.
+            Vel eros donec ac odio tempor. Gravida arcu ac tortor dignissim convallis aenean. Lobortis elementum nibh
+            tellus molestie. Auctor elit sed vulputate mi sit amet.
+        </p>
+        <p class="article__text">
+            Malesuada fames ac turpis egestas integer eget aliquet nibh. Donec massa sapien faucibus et molestie ac
+            feugiat. Pellentesque nec nam aliquam sem et tortor. Massa sed elementum tempus egestas. Mi ipsum faucibus
+            vitae aliquet nec ullamcorper sit amet risus. Sit amet volutpat consequat mauris nunc congue. Lacus luctus
+            accumsan tortor posuere ac ut consequat. Sapien pellentesque habitant morbi tristique. Auctor neque vitae
+            tempus quam pellentesque nec. Id aliquet risus feugiat in. In nibh mauris cursus mattis molestie a iaculis
+            at. Diam maecenas sed enim ut sem viverra. Orci nulla pellentesque dignissim enim sit. Consectetur libero id
+            faucibus nisl tincidunt eget nullam non nisi. Nunc sed velit dignissim sodales. Scelerisque eleifend donec
+            pretium vulputate sapien nec sagittis aliquam.
+        </p>
+        <p class="article__text">
+            Congue nisi vitae suscipit tellus mauris. Integer quis auctor elit sed vulputate mi sit. Fermentum et
+            sollicitudin ac orci phasellus egestas tellus rutrum. Adipiscing commodo elit at imperdiet. Cras pulvinar
+            mattis nunc sed blandit libero volutpat sed cras. Libero nunc consequat interdum varius sit. Elit eget
+            gravida cum sociis natoque penatibus et magnis. Nisl tincidunt eget nullam non nisi est sit. Lacus vel
+            facilisis volutpat est. Tempor orci dapibus ultrices in iaculis nunc. Volutpat commodo sed egestas egestas
+            fringilla phasellus faucibus scelerisque. Sem et tortor consequat id porta nibh. Etiam non quam lacus
+            suspendisse faucibus interdum posuere lorem. Tempor orci eu lobortis elementum. Mi in nulla posuere
+            sollicitudin aliquam ultrices sagittis orci. Tincidunt praesent semper feugiat nibh. Ligula ullamcorper
+            malesuada proin libero.
+        </p>
     </div>
     <div class="cards">
         <h3 class="cards__title">Популярные JS фреймворки</h3>
         <div class="cards-container">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/react.png" alt="React" class="card__image">
+                <span class="card__title">React</span>
+                <span class="card__description">JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов</span>
+            </div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/vue.png" alt="Vue.js" class="card__image">
+                <span class="card__title">Vue.js</span>
+                <span class="card__description">JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов</span>
+            </div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/angular.png" alt="Angular" class="card__image">
+                <span class="card__title">Angular</span>
+                <span class="card__description">это открытая и свободная платформа для разработки веб-приложений, написанная на языке TypeScript</span>
+            </div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/backbone.png" alt="Backbone.js" class="card__image">
+                <span class="card__title">Backbone.js</span>
+                <span class="card__description">avaScript-библиотека, основанная на шаблоне проектирования Model-View-Presenter, предназначена для разработки веб-приложений</span>
+            </div>
         </div>
     </div>
     <div class="article">
-        <h3 class="article__title">Что такое CSS фреймворки</h3>
-        <p class="article__text">Гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга
-            гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга гинга гунга
-            гинга </p>
+        <h3 class="article__title">Что такое CSS фреймворки?</h3>
+        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam. A condimentum vitae
+            sapien pellentesque habitant morbi tristique senectus et. Ullamcorper velit sed ullamcorper morbi tincidunt
+            ornare massa. At in tellus integer feugiat scelerisque varius morbi enim. Tortor condimentum lacinia quis
+            vel eros. Tortor vitae purus faucibus ornare suspendisse sed nisi. Vulputate odio ut enim blandit volutpat.
+            Vel eros donec ac odio tempor. Gravida arcu ac tortor dignissim convallis aenean. Lobortis elementum nibh
+            tellus molestie. Auctor elit sed vulputate mi sit amet.
+        </p>
+        <p class="article__text">
+            Malesuada fames ac turpis egestas integer eget aliquet nibh. Donec massa sapien faucibus et molestie ac
+            feugiat. Pellentesque nec nam aliquam sem et tortor. Massa sed elementum tempus egestas. Mi ipsum faucibus
+            vitae aliquet nec ullamcorper sit amet risus. Sit amet volutpat consequat mauris nunc congue. Lacus luctus
+            accumsan tortor posuere ac ut consequat. Sapien pellentesque habitant morbi tristique. Auctor neque vitae
+            tempus quam pellentesque nec. Id aliquet risus feugiat in. In nibh mauris cursus mattis molestie a iaculis
+            at. Diam maecenas sed enim ut sem viverra. Orci nulla pellentesque dignissim enim sit. Consectetur libero id
+            faucibus nisl tincidunt eget nullam non nisi. Nunc sed velit dignissim sodales. Scelerisque eleifend donec
+            pretium vulputate sapien nec sagittis aliquam.
+        </p>
+        <p class="article__text">
+            Congue nisi vitae suscipit tellus mauris. Integer quis auctor elit sed vulputate mi sit. Fermentum et
+            sollicitudin ac orci phasellus egestas tellus rutrum. Adipiscing commodo elit at imperdiet. Cras pulvinar
+            mattis nunc sed blandit libero volutpat sed cras. Libero nunc consequat interdum varius sit. Elit eget
+            gravida cum sociis natoque penatibus et magnis. Nisl tincidunt eget nullam non nisi est sit. Lacus vel
+            facilisis volutpat est. Tempor orci dapibus ultrices in iaculis nunc. Volutpat commodo sed egestas egestas
+            fringilla phasellus faucibus scelerisque. Sem et tortor consequat id porta nibh. Etiam non quam lacus
+            suspendisse faucibus interdum posuere lorem. Tempor orci eu lobortis elementum. Mi in nulla posuere
+            sollicitudin aliquam ultrices sagittis orci. Tincidunt praesent semper feugiat nibh. Ligula ullamcorper
+            malesuada proin libero.
+        </p>
     </div>
     <div class="cards">
         <h3 class="cards__title">Популярные CSS фреймворки</h3>
         <div class="cards-container">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/bootstrap.png" alt="Bootstrap" class="card__image">
+                <span class="card__title">Bootstrap</span>
+                <span class="card__description">свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления</span>
+            </div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/animate.png" alt="Animate.css" class="card__image">
+                <span class="card__title">Animate.css</span>
+                <span class="card__description">библиотека, в которую встроены десятки классных кроссбраузерных анимаций, которыми можно пользоваться при разработке своего проекта</span>
+            </div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/semantic.png" alt="Semantic UI" class="card__image">
+                <span class="card__title">Semantic UI</span>
+                <span class="card__description">modern front-end development framework, powered by LESS and jQuery</span>
+            </div>
+            <div class="card" data-proportion-h="2">
+                <img src="img/foundation.png" alt="Foundation" class="card__image">
+                <span class="card__title">Foundation</span>
+                <span class="card__description">Foundation - это отзывчивый интерфейс. Foundation предоставляет чувствительную сетку и компоненты HTML, CSS UI, шаблоны и фрагменты кода</span>
+            </div>
         </div>
     </div>
 </main>
 <footer class="footer">
-    <span class="footer__item">191-321 Огородников Николай aka The Gunga Ginga Guy 3 (LV. 2 CROOK)</span>
+    <span class="footer__item">191-321 Огородников Николай</span>
+    <span class="footer__item footer__item_disabled">The Gunga Ginga Guy 3 (LV. 2 CROOK)</span>
 </footer>
 </body>
 </html>

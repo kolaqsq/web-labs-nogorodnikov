@@ -12,13 +12,23 @@ $magenta: #ff00bf
 
 .main-page
   display: flex
-  flex-flow: column nowrap
   align-items: center
   justify-content: space-between
-  margin: 0
   font-family: Zum-Zum, monospace
   background-color: $green
   color: $red
+  flex-flow: column nowrap
+  margin: 0
+  overflow: auto
+
+.main-page::-webkit-scrollbar
+  width: 1%
+
+.main-page::-webkit-scrollbar-thumb
+  background-color: $blue
+
+.main-page::-webkit-scrollbar-track
+  background-color: $magenta
 
 .header
   display: flex
@@ -52,12 +62,6 @@ $magenta: #ff00bf
   align-items: center
   justify-content: center
 
-.title :first-child
-  margin-bottom: 1%
-
-.title :last-child
-  padding-top: 1.5%
-
 .title__sub-title
   align-items: center
   margin: 0
@@ -65,6 +69,113 @@ $magenta: #ff00bf
 
 .title__title
   align-items: center
-  margin: 0
+  white-space: nowrap
   font-size: 2.5vmax
-  border: 1vmax solid $magenta
+  margin: 0
+  padding: 1.5% 1.5% 0
+  border-width: 1vmax
+  border-style: solid
+  border-color: $magenta
+  border-image: initial
+
+.article
+  display: flex
+  align-items: center
+  justify-content: space-between
+  box-sizing: border-box
+  flex-flow: column nowrap
+  padding: 1.5%
+
+.article__title
+  display: flex
+  align-items: center
+  white-space: nowrap
+  font-size: 1.5vmax
+  line-height: 150%
+  color: $green
+  background-color: $blue
+  margin: 0
+
+.article__text
+  display: flex
+  text-align: justify
+  font-size: 1.2vmax
+  padding: 1.5% 2% 0
+
+.cards
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  flex-flow: column nowrap
+
+.cards__title
+  display: flex
+  align-items: center
+  white-space: nowrap
+  font-size: 1.5vmax
+  line-height: 150%
+  color: $green
+  background-color: $magenta
+  margin: 0
+
+.cards-container
+  display: flex
+  align-items: center
+  justify-content: space-around
+  width: 100%
+  box-sizing: border-box
+  flex-flow: row nowrap
+  margin: 0
+  padding: 5% 2.5%
+
+.card
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 20%
+  height: 100%
+  flex-flow: column nowrap
+  border-radius: 10px
+  padding: 1%
+  transition: .5s
+
+.card:hover
+  transform: scale(1.25)
+  border-radius: 10px
+  box-shadow: 0 0 10px $magenta
+  transition: 0.5s
+
+.card__image
+  width: 100%
+
+.card__title
+  display: flex
+  align-items: center
+  font-size: 1.5vmax
+
+.card__description
+  display: flex
+  text-align: justify
+  font-size: 1vmax
+
+.footer
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  bottom: 0
+  width: 100%
+  background-color: $yellow
+  flex-flow: row wrap
+
+.footer__item
+  font-size: 1vmax
+
+.footer__item_disabled
+  color: $yellow
+  transition: 5s
+
+.footer__item_disabled:active
+  color: $red
+  transition: .5s
