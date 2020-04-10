@@ -37,15 +37,27 @@ $magenta: #ff00bf
   justify-content: space-between
   box-sizing: border-box
   width: 100%
+  height: 7.5vmax
   padding: 1%
   background-color: $yellow
 
-.header__menu
+.menu
   display: flex
   flex-flow: row nowrap
-  align-items: center
+  align-items: flex-start
   justify-content: space-between
-  width: 20%
+  width: 30%
+  height: 100%
+  font-size: 1.5vmax
+  overflow: visible
+
+.dropdown__content
+  display: none
+
+.dropdown:hover .dropdown__content
+  display: flex
+  flex-flow: column
+  position: absolute
 
 .main
   display: flex
