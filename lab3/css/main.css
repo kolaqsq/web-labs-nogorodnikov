@@ -57,21 +57,16 @@
   padding-top: 1%;
 }
 
-.title {
+.book {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.title__sub-title {
-  align-items: center;
-  margin: 0;
-  font-size: 1vmax;
-}
-
-.title__title {
-  align-items: center;
+.book__title {
+  text-align: center;
   white-space: nowrap;
   font-size: 2.5vmax;
   margin: 0;
@@ -82,8 +77,19 @@
   border-image: initial;
 }
 
-.article {
+.book__part-title {
   display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 2vmax;
+  line-height: 150%;
+  color: #00FF19;
+  background-color: #00fff3;
+}
+
+.book__part {
+  display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
@@ -91,87 +97,19 @@
   padding: 1.5%;
 }
 
-.article__title {
+.book__chapter-title {
   display: flex;
   align-items: center;
   white-space: nowrap;
   font-size: 1.5vmax;
   line-height: 150%;
-  color: #00FF19;
-  background-color: #00fff3;
-  margin: 0;
+  color: #00fff3;
 }
 
-.article__text {
-  display: flex;
+.book__chapter {
   text-align: justify;
   font-size: 1.2vmax;
   padding: 1.5% 2% 0;
-}
-
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-flow: column nowrap;
-}
-
-.cards__title {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  font-size: 1.5vmax;
-  line-height: 150%;
-  color: #00FF19;
-  background-color: #ff00bf;
-  margin: 0;
-}
-
-.cards-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  box-sizing: border-box;
-  flex-flow: row nowrap;
-  margin: 0;
-  padding: 5% 2.5%;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 20%;
-  height: 100%;
-  flex-flow: column nowrap;
-  border-radius: 10px;
-  padding: 1%;
-  transition: 0.5s;
-}
-
-.card:hover {
-  transform: scale(1.25);
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ff00bf;
-  transition: 0.5s;
-}
-
-.card__image {
-  width: 100%;
-}
-
-.card__title {
-  display: flex;
-  align-items: center;
-  font-size: 1.5vmax;
-}
-
-.card__description {
-  display: flex;
-  text-align: justify;
-  font-size: 1vmax;
 }
 
 .footer {
