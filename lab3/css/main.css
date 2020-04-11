@@ -16,6 +16,14 @@
   overflow: auto;
 }
 
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  pointer-events: none;
+}
+
 .main-page::-webkit-scrollbar {
   width: 1%;
 }
@@ -38,27 +46,72 @@
   height: 7.5vmax;
   padding: 1%;
   background-color: #FFF500;
+  z-index: 10;
 }
 
 .menu {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: flex-end;
+  width: 40%;
   height: 100%;
-  font-size: 1.5vmax;
   overflow: visible;
 }
 
+.dropdown {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin: auto;
+  padding: 5%;
+}
+
+.dropdown__header {
+  text-decoration: none;
+  width: 100%;
+  font-size: 1.5vmax;
+  white-space: nowrap;
+  color: #FF0000;
+  transition: 0.25s;
+}
+
+.dropdown:hover .dropdown__header {
+  background-color: #FF0000;
+  color: #FFF500;
+  letter-spacing: 2vmax;
+  transition: 0.25s;
+}
+
 .dropdown__content {
-  display: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  background-color: #FFF500;
+  transition: 0.25s;
+}
+
+.dropdown__item {
+  width: 100%;
+  text-decoration: none;
+  color: #00fff3;
+  font-size: 0;
+  transition: 0.25s;
 }
 
 .dropdown:hover .dropdown__content {
-  display: flex;
-  flex-flow: column;
-  position: absolute;
+  background-color: #FF0000;
+  transition: 0.25s;
+}
+
+.dropdown:hover .dropdown__item {
+  font-size: 1vmax;
+  transition: 0.25s;
+}
+
+.dropdown__item:hover {
+  color: #00FF19;
+  letter-spacing: 2vmax;
 }
 
 .main {
@@ -69,6 +122,7 @@
   box-sizing: border-box;
   width: 100%;
   padding-top: 1%;
+  z-index: 0;
 }
 
 .book {
@@ -108,7 +162,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   flex-flow: column nowrap;
-  padding: 1.5%;
+  padding: 1.5% 10%;
 }
 
 .book__chapter-title {
