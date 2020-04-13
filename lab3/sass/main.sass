@@ -23,31 +23,24 @@ $magenta: #ff00bf
   height: 100vh
   z-index: 0
   margin: 0
+  cursor: url("../img/cursor.png"), url("../img/cursor.cur"), auto
 
 .content
   display: flex
   flex-flow: column nowrap
   align-items: center
-  justify-content:  space-between
+  justify-content: space-between
   margin: 0 8%
   overflow: auto
 
-//.main-page::-webkit-scrollbar
-//  width: 1%
-//
-//.main-page::-webkit-scrollbar-thumb
-//  background-color: $blue
-//
-//.main-page::-webkit-scrollbar-track
-//  background-color: $magenta
-
-.frame
+.main-page__frame
+  background: url("../img/frame.svg")
+  background-size: 100% 100%
   width: 100vw
   height: 100vh
   position: fixed
   z-index: 100
   pointer-events: none
-
 
 .header
   display: flex
@@ -60,6 +53,22 @@ $magenta: #ff00bf
   margin-top: 5%
   padding: 1% 2% 1% 0
   z-index: 10
+  overflow: visible
+
+.header__logo
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100%
+  width: 7.5%
+  overflow: visible
+  cursor: url("../img/cursor.png"), url("../img/cursor.cur"), auto
+
+
+.header__image
+  height: 100%
+  width: 100%
+  object-fit: contain
 
 .menu
   display: flex
@@ -91,20 +100,19 @@ $magenta: #ff00bf
   font-size: 1.5vmax
   white-space: nowrap
   color: $red
+  cursor: url("../img/cursor.png"), url("../img/cursor.cur"), auto
   transition: .25s
 
 .dropdown:hover .dropdown__header
   background-color: $red
   color: $yellow
   letter-spacing: 2vmax
-  //margin-top: 2%
   transition: .25s
 
 .dropdown__content
   display: flex
   flex-flow: column nowrap
   align-items: flex-start
-  //background-color: $red
   transition: .25s
 
 .dropdown__item
@@ -112,6 +120,7 @@ $magenta: #ff00bf
   text-decoration: none
   color: $blue
   font-size: 0
+  cursor: url("../img/cursor.png"), url("../img/cursor.cur"), auto
   transition: .25s
 
 .dropdown:hover .dropdown__content
@@ -194,16 +203,76 @@ $magenta: #ff00bf
   position: relative
   bottom: 0
   width: 100%
-  background-color: $yellow
+  margin: 7.5%
   flex-flow: row wrap
 
 .footer__item
   font-size: 1vmax
 
 .footer__item_disabled
-  color: $yellow
-  transition: 5s
+  color: $green
+  transition: .5s
 
 .footer__item_disabled:active
   color: $red
   transition: .5s
+
+/* Tablet landscape ----------- */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 768px) and (max-device-height: 1024px)
+  .main-page__frame
+    background: url("../img/frame-mobile.svg")
+    background-size: 100% 100%
+
+  .dropdown__header
+    pointer-events: none
+
+
+/* Tablet portrait ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 1024px) and (max-device-height: 1366px)
+  .main-page__frame
+    background: url("../img/frame-mobile.svg")
+    background-size: 100% 100%
+
+  .header
+    margin-top: 10%
+
+  .dropdown__header
+    pointer-events: none
+
+  .dropdown:hover .dropdown__header
+    letter-spacing: 1vmax
+
+  .mCS-main.mCSB_scrollTools
+    height: 50%
+
+
+/* Smartphone landscape ----------- */
+@media only screen and (min-device-width: 568px) and (max-device-width: 823px) and (min-device-height: 320px) and (max-device-height: 425px)
+  .main-page__frame
+    background: url("../img/frame-mobile.svg")
+    background-size: 100% 100%
+
+  .dropdown__header
+    pointer-events: none
+
+  .dropdown:hover .dropdown__header
+    letter-spacing: 1.5vmax
+
+
+/* Smartphone portrait ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) and (min-device-height: 568px) and (max-device-height: 823px)
+  .main-page__frame
+    background: url("../img/frame-mobile.svg")
+    background-size: 100% 100%
+
+  .header
+    margin-top: 10%
+
+  .dropdown__header
+    pointer-events: none
+
+  .dropdown:hover .dropdown__header
+    letter-spacing: initial
+
+  .mCS-main.mCSB_scrollTools
+    height: 25%
