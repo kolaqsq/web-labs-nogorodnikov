@@ -195,7 +195,7 @@
   display: flex;
   align-items: center;
   color: #151C22;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   transition: 0.25s;
 }
 
@@ -260,7 +260,7 @@
   transition: 0.25s;
 }
 
-.products {
+.card-view {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
@@ -269,26 +269,25 @@
   margin-top: 70px;
 }
 
-.product {
+.card {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
   width: 270px;
-  height: 413px;
   transition: 0.25s;
 }
 
-.product:hover {
+.card:hover {
   transform: scale(1.05);
   transition: 0.25s;
 }
 
-.product__image {
+.card__image {
   width: 100%;
 }
 
-.product__title {
+.card__title {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -300,7 +299,7 @@
   margin-top: 15px;
 }
 
-.product__price {
+.card__price {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -393,6 +392,64 @@
 .new-collection__button:hover {
   transform: scale(1.05);
   transition: 0.25s;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #151C22;
+  width: 100%;
+  margin-top: 130px;
+}
+
+.footer__title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 476px;
+  margin-top: 35px;
+}
+
+.navigation__item {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  transition: 0.25s;
+}
+
+.navigation__item:hover {
+  transform: scale(1.25);
+  transition: 0.25s;
+}
+
+.socials {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 164px;
+  margin-top: 37px;
 }
 
 /*# sourceMappingURL=main.css.map */
