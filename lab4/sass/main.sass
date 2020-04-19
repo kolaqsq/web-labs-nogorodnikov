@@ -12,7 +12,6 @@
   align-items: center
   justify-content: flex-start
   width: 100%
-  height: 100%
   background-color: #F1F2F4
 
 .page-title
@@ -43,15 +42,16 @@
   width: 100%
   max-height: 617px
   height: 100%
-  border: 1px solid red
 
 .menu-with-arrow
   display: flex
   flex-flow: column nowrap
   align-items: flex-start
   justify-content: space-between
-  border: 1px solid blue
-  padding: 15px 0
+  align-self: stretch
+  padding-top: 50px
+  padding-bottom: 15px
+  margin-right: 20px
 
 
 .menu
@@ -70,7 +70,7 @@
   display: flex
   align-items: center
   color: #151C22
-  margin-top: 35px
+  margin-bottom: 35px
   transition: .25s
 
 .menu__item:hover
@@ -91,7 +91,8 @@
   flex-flow: column nowrap
   align-items: flex-start
   justify-content: center
-  border: 1px solid blue
+  align-self: stretch
+  margin-top: 50px
 
 .brand__tagline
   font-family: 'Work Sans', sans-serif
@@ -140,7 +141,6 @@
   display: flex
   max-width: 530px
   max-height: 617px
-  border: 1px solid blue
 
 .image__item
   width: 100%
@@ -150,7 +150,9 @@
   flex-flow: column nowrap
   align-items: flex-end
   justify-content: space-between
-  border: 1px solid blue
+  align-self: stretch
+  padding-top: 50px
+  padding-bottom: 15px
 
 .cart-and-search
   display: flex
@@ -174,8 +176,105 @@
   display: flex
   align-items: center
   color: #151C22
+  padding-bottom: 35px
   transition: .25s
 
 .links__item:hover
   transform: scale(1.25)
   transition: .25s
+
+.main
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  justify-content: flex-start
+  width: 100%
+
+.bestsellers
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  justify-content: flex-start
+  max-width: 1170px
+  width: 100%
+
+.bestsellers__title
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  margin-top: 130px
+
+.bestsellers__name
+  font-family: 'Work Sans', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 32px
+  line-height: 38px
+  display: flex
+  align-items: center
+  color: #151C22
+
+.bestsellers__view
+  text-decoration: none
+  font-family: 'Work Sans', sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 21px
+  display: flex
+  align-items: center
+  color: #151C22
+  border-bottom: 2px solid #151C22
+  transition: .25s
+
+.bestsellers__view:hover
+  transform: scale(1.25)
+  transition: .25s
+
+.products
+  display: flex
+  flex-flow: row nowrap
+  align-items: flex-start
+  justify-content: space-between
+  width: 100%
+  margin-top: 70px
+
+.product
+  display: flex
+  flex-flow: column nowrap
+  align-items: flex-start
+  justify-content: flex-start
+  width: 270px
+  height: 413px
+  transition: .25s
+
+.product:hover
+  transform: scale(1.05)
+  transition: .25s
+
+.product__image
+  width: 100%
+
+.product__title
+  font-family: 'Work Sans', sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 21px
+  display: flex
+  align-items: center
+  color: #151C22
+  margin-top: 15px
+
+.product__price
+  font-family: 'Work Sans', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 19px
+  display: flex
+  align-items: center
+  color: #151C22
+  margin-top: 10px
