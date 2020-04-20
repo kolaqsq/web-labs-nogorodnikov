@@ -62,6 +62,49 @@
                 <a class="links__item" href="#">Instagram</a>
             </div>
         </div>
+        <div class="menu-and-brand-768">
+            <div class="menu">
+                <a class="menu__item" href="#">Woman</a>
+                <a class="menu__item" href="#">Men</a>
+                <a class="menu__item" href="#">New</a>
+            </div>
+            <div class="brand">
+                <span class="brand__tagline">The quality you deserve</span>
+                <span class="brand__name">DENIM</span>
+                <a class="brand__button" href="#">Check new collection</a>
+            </div>
+            <a class="icon-button" href="#">
+                <svg class="icon-button__icon" fill="none" height="29" viewBox="0 0 12 29" width="12"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0V17V27M6 27L11 21M6 27L1 21" stroke="#151C22" stroke-width="2"/>
+                </svg>
+            </a>
+        </div>
+        <div class="image-buttons-and-links-768">
+            <div class="cart-and-search">
+                <a class="icon-button" href="#">
+                    <svg class="icon-button__icon" fill="none" height="20" viewBox="0 0 22 20" width="22"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1H4.63636L7.07273 12.4771C7.15586 12.8718 7.38355 13.2263 7.71595 13.4785C8.04835 13.7308 8.46427 13.8649 8.89091 13.8571H17.7273C18.1539 13.8649 18.5698 13.7308 18.9022 13.4785C19.2346 13.2263 19.4623 12.8718 19.5455 12.4771L21 5.28571H5.54545M9.18182 18.1429C9.18182 18.6162 8.7748 19 8.27273 19C7.77065 19 7.36364 18.6162 7.36364 18.1429C7.36364 17.6695 7.77065 17.2857 8.27273 17.2857C8.7748 17.2857 9.18182 17.6695 9.18182 18.1429ZM19.1818 18.1429C19.1818 18.6162 18.7748 19 18.2727 19C17.7707 19 17.3636 18.6162 17.3636 18.1429C17.3636 17.6695 17.7707 17.2857 18.2727 17.2857C18.7748 17.2857 19.1818 17.6695 19.1818 18.1429Z"
+                              stroke="#151C22" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a class="icon-button" href="#">
+                    <svg class="icon-button__icon" fill="none" height="20" viewBox="0 0 20 20" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z"
+                              stroke="#151C22" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="image">
+                <img alt="Banner image" class="image__item" src="img/banner.png">
+            </div>
+            <div class="links">
+                <a class="links__item" href="#">Facebook</a>
+                <a class="links__item" href="#">Instagram</a>
+            </div>
+        </div>
     </div>
 </header>
 <main class="main">
@@ -72,22 +115,30 @@
         </div>
         <div class="card-view">
             <div class="card">
-                <img alt="Jacket image" class="card__image" src="img/products/jacket.png">
+                <div class="card__image">
+                    <img alt="Jacket image" class="card__bitmap" src="img/products/jacket.png">
+                </div>
                 <span class="card__title">Jacket</span>
                 <span class="card__price">$ 120</span>
             </div>
             <div class="card">
-                <img alt="Overalls image" class="card__image" src="img/products/overalls.png">
+                <div class="card__image">
+                    <img alt="Overalls image" class="card__bitmap" src="img/products/overalls.png">
+                </div>
                 <span class="card__title">Overalls</span>
                 <span class="card__price">$ 140</span>
             </div>
             <div class="card">
-                <img alt="Jacket image" class="card__image" src="img/products/jacket-2.png">
+                <div class="card__image">
+                    <img alt="Jacket image" class="card__bitmap" src="img/products/jacket-2.png">
+                </div>
                 <span class="card__title">Jacket</span>
                 <span class="card__price">$ 90</span>
             </div>
             <div class="card">
-                <img alt="Overalls image" class="card__image" src="img/products/overalls-2.png">
+                <div class="card__image">
+                    <img alt="Overalls image" class="card__bitmap" src="img/products/overalls-2.png">
+                </div>
                 <span class="card__title">Overalls</span>
                 <span class="card__price">$ 160</span>
             </div>
@@ -95,6 +146,7 @@
     </section>
     <section class="new-collection">
         <img alt="New collection image" class="new-collection__image" src="img/new-collection.png">
+        <img src="img/new-collection-mobile.png" alt="New collection image" class="new-collection__image-768">
         <div class="new-collection__background">
             <div class="new-collection__information">
                 <span class="new-collection__description">Street fashion collection</span>
@@ -102,32 +154,71 @@
                 <a class="new-collection__button" href="#">Shop now</a>
             </div>
         </div>
-
     </section>
-    <section class="section">
+    <section class="section section_laptop">
         <div class="section__title">
             <span class="section__name">Shop by card</span>
             <a class="section__view" href="#">View all</a>
         </div>
         <div class="card-view">
             <div class="card">
-                <img alt="Jeans image" class="card__image" src="img/categories/jeans.png">
+                <div class="card__image">
+                    <img alt="Jeans image" class="card__bitmap" src="img/categories/jeans.png">
+                </div>
                 <span class="card__title">Jeans</span>
             </div>
             <div class="card">
-                <img alt="Shirts image" class="card__image" src="img/categories/shirts.png">
+                <div class="card__image">
+                    <img alt="Shirts image" class="card__bitmap" src="img/categories/shirts.png">
+                </div>
                 <span class="card__title">Shirts</span>
             </div>
             <div class="card">
-                <img alt="Jackets image" class="card__image" src="img/categories/jackets.png">
+                <div class="card__image">
+                    <img alt="Jackets image" class="card__bitmap" src="img/categories/jackets.png">
+                </div>
                 <span class="card__title">Jackets</span>
             </div>
             <div class="card">
-                <img alt="Overalls image" class="card__image" src="img/categories/overalls.png">
+                <div class="card__image">
+                    <img alt="Overalls image" class="card__bitmap" src="img/categories/overalls.png">
+                </div>
                 <span class="card__title">Overalls</span>
             </div>
         </div>
     </section>
+    <div class="section section_asymmetric-768">
+        <div class="section__title">
+            <span class="section__name">Shop by card</span>
+            <a class="section__view" href="#">View all</a>
+        </div>
+        <div class="card-view">
+            <div class="card">
+                <div class="card__image">
+                    <img alt="Jeans image" class="card__bitmap" src="img/categories/jeans.png">
+                </div>
+                <span class="card__title">Jeans</span>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img alt="Shirts image" class="card__bitmap" src="img/categories/shirts.png">
+                </div>
+                <span class="card__title">Shirts</span>
+            </div>
+            <div class="card card_bottom">
+                <div class="card__image">
+                    <img alt="Overalls image" class="card__bitmap" src="img/categories/overalls.png">
+                </div>
+                <span class="card__title">Overalls</span>
+            </div>
+            <div class="card card_bottom">
+                <div class="card__image">
+                    <img alt="Jackets image" class="card__bitmap" src="img/categories/jackets.png">
+                </div>
+                <span class="card__title">Jackets</span>
+            </div>
+        </div>
+    </div>
 </main>
 <footer class="footer">
     <span class="footer__title">Nîmes</span>
