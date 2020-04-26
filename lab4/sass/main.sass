@@ -41,6 +41,9 @@
   max-width: 1170px
   width: 100%
 
+.banner_320
+  display: none
+
 .menu-with-arrow
   display: flex
   flex-flow: column nowrap
@@ -238,6 +241,9 @@
   transform: scale(1.25)
   transition: .25s
 
+.section__view_320
+  display: none
+
 .card-view
   display: flex
   flex-flow: row nowrap
@@ -375,7 +381,7 @@
   width: 100%
   margin-top: 130px
 
-.footer__title
+.manufacturer
   font-family: 'Work Sans', sans-serif
   font-style: normal
   font-weight: 800
@@ -393,6 +399,9 @@
   justify-content: space-between
   width: 476px
   margin-top: 35px
+
+.navigation_320
+  display: none
 
 .navigation__item
   text-decoration: none
@@ -417,6 +426,7 @@
   justify-content: space-between
   width: 164px
   margin-top: 37px
+  margin-bottom: 15px
 
 @media only screen and (max-device-width: 768px)
   .banner
@@ -476,7 +486,7 @@
     flex-flow: row-reverse nowrap
     width: 100%
 
-  .image-buttons-and-links-768 >.cart-and-search > .icon-button
+  .image-buttons-and-links-768 > .cart-and-search > .icon-button
     margin-left: 35px
     margin-bottom: 0
 
@@ -500,6 +510,7 @@
 
   .card
     width: 324px
+    margin-bottom: 50px
 
   .card__image
     height: 349px
@@ -513,14 +524,24 @@
   .section_asymmetric-768
     display: flex
 
+  .section_asymmetric-768 .card
+    margin-bottom: 0
+
   .section_asymmetric-768 .card__image
     height: auto
+
+  .section__title
+    margin-top: 100px
+
+  .card-view
+    margin-top: 60px
 
   .card_bottom
     align-self: flex-end
 
   .new-collection
     max-width: 678px
+    margin-top: 50px
 
   .new-collection__image
     display: none
@@ -548,4 +569,158 @@
     margin-top: 40px
     margin-left: 50px
 
+  .footer
+    margin-top: 100px
+
+  .navigation
+    margin-top: 40px
+
+  .socials
+    margin-top: 40px
+    width: 177px
+
 @media only screen and (max-device-width: 320px)
+  .page-title
+    height: 57px
+
+  .banner
+    display: none
+
+  .banner_320
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+    justify-content: flex-start
+    max-width: 290px
+
+  .top-menu
+    display: flex
+    flex-flow: row nowrap
+    align-items: flex-start
+    justify-content: space-between
+    width: 100%
+    margin-top: 30px
+
+  .menu__item
+    margin-bottom: 0
+    margin-right: 25px
+
+  .top-menu .icon-button
+    margin-bottom: 0
+    margin-left: 25px
+
+  .banner_320 .image
+    display: flex
+    align-self: center
+    max-width: 242px
+    margin: 40px 0 0
+
+  .banner_320 .brand
+    display: flex
+    align-self: center
+    align-items: center
+    max-width: 211px
+    margin: 30px 0 0
+
+  .brand__tagline
+    margin: 0
+
+  .brand__name
+    font-size: 86px
+    line-height: 100%
+    margin-top: 0
+    margin-bottom: 40px
+
+  .brand__button
+    padding: 27px 17px
+    margin: 0 0 50px
+
+  .section
+    max-width: 290px
+
+  .section__title
+    margin-top: 60px
+
+  .section__name
+    font-size: 26px
+    line-height: 30px
+
+  .section__view
+    display: none
+
+  .section__view_320
+    display: flex
+    font-size: 16px
+    line-height: 19px
+
+  .card-view
+    margin-top: 40px
+    margin-bottom: 10px
+
+  .card
+    max-width: 130px
+    margin-bottom: 30px
+
+  .card__image
+    height: auto
+
+  .section_asymmetric-768 .card-view
+    margin-bottom: 40px
+
+  .section_asymmetric-768 .card
+    margin-bottom: 0
+
+  .new-collection
+    flex-flow: column-reverse nowrap
+    margin-top: 60px
+
+  .new-collection__information
+    align-items: center
+    margin: 15px 15px 0 15px
+
+  .new-collection__description
+    margin: 40px 0 0
+
+  .new-collection__season
+    margin: 12px 0 0
+    font-size: 26px
+    line-height: 100%
+
+  .new-collection__button
+    margin: 30px 0 40px 0
+
+  .footer
+    margin-top: 60px
+
+  .manufacturer
+    display: none
+
+  .navigation
+    display: none
+
+  .navigation_320
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-start
+    justify-content: flex-start
+    max-width: 290px
+    margin-top: 50px
+
+  .navigation_320 .manufacturer
+    display: flex
+    flex: 1 0 50%
+    margin: 0 0 30px
+
+  .navigation__item
+    flex: 1 0 50%
+    margin: 0 0 30px
+
+  .socials
+    width: 100%
+    max-width: 290px
+    align-items: flex-start
+    justify-content: flex-start
+    margin-top: 12px
+
+  .socials .icon-button
+    margin-right: 34px
