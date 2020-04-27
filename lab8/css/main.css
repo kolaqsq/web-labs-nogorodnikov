@@ -88,7 +88,6 @@
 }
 
 .icon-button {
-  display: flex;
   margin-bottom: 35px;
   transition: 0.25s;
 }
@@ -464,8 +463,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
   color: #FFFFFF;
   transition: 0.25s;
 }
