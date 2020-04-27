@@ -1,0 +1,858 @@
+.main-page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #F1F2F4;
+}
+
+.page-title {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 67px;
+  background-color: #fff;
+}
+
+.page-title__text {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #151c22;
+}
+
+.banner {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  width: 100%;
+}
+
+.banner_320 {
+  display: none;
+}
+
+.menu-with-arrow {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.menu__item {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+  margin-bottom: 35px;
+  transition: 0.25s;
+}
+
+.menu__item:hover {
+  transform: scale(1.25);
+  transition: 0.25s;
+}
+
+.icon-button {
+  display: flex;
+  margin-bottom: 35px;
+  transition: 0.25s;
+}
+
+.icon-button:hover {
+  transform: scale(1.25);
+  transition: 0.25s;
+}
+
+.brand {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: 50px;
+}
+
+.brand__tagline {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #727A82;
+  margin-left: 4px;
+}
+
+.brand__name {
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 128px;
+  line-height: 128px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+}
+
+.brand__button {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #151C22;
+  padding: 27px 24px;
+  margin-left: 4px;
+  transition: 0.25s;
+}
+
+.brand__button:hover {
+  transform: scale(1.05);
+  transition: 0.25s;
+}
+
+.image {
+  display: flex;
+  max-width: 530px;
+  max-height: 617px;
+}
+
+.image__item {
+  width: 100%;
+}
+
+.cart-search-and-links {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-self: stretch;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.cart-and-search {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.links {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.links__item {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+  margin-bottom: 35px;
+  transition: 0.25s;
+}
+
+.links__item:hover {
+  transform: scale(1.25);
+  transition: 0.25s;
+}
+
+.menu-and-brand-768 {
+  display: none;
+}
+
+.image-buttons-and-links-768 {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1170px;
+  width: 100%;
+}
+
+.section_asymmetric-mobile {
+  display: none;
+}
+
+.section__title {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 130px;
+}
+
+.section__name {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+}
+
+.section__view {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+  border-bottom: 2px solid #151C22;
+  transition: 0.25s;
+}
+
+.section__view:hover {
+  transform: scale(1.25);
+  transition: 0.25s;
+}
+
+.section__view_320 {
+  display: none;
+}
+
+.card-view {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 270px;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.25s;
+}
+
+.card__image {
+  display: flex;
+}
+
+.card__bitmap {
+  width: 100%;
+}
+
+.card__title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+  margin-top: 15px;
+}
+
+.card__price {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+  margin-top: 10px;
+}
+
+.new-collection {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1170px;
+  width: 100%;
+  margin-top: 130px;
+}
+
+.new-collection__image {
+  max-width: 700px;
+  width: 100%;
+}
+
+.new-collection__image-mobile {
+  display: none;
+}
+
+.new-collection__background {
+  display: flex;
+  align-self: stretch;
+  width: 100%;
+  background: url("../img/new-collection-background.png") center center no-repeat;
+  background-size: cover;
+}
+
+.new-collection__information {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 31px;
+  margin-bottom: 31px;
+  margin-right: 70px;
+  background-color: #F1F2F4;
+}
+
+.new-collection__description {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #727A82;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+.new-collection__season {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #151C22;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.new-collection__button {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #151C22;
+  margin-top: 50px;
+  margin-left: 70px;
+  padding: 27px 60px;
+  white-space: nowrap;
+  transition: 0.25s;
+}
+
+.new-collection__button:hover {
+  transform: scale(1.05);
+  transition: 0.25s;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #151C22;
+  width: 100%;
+  margin-top: 130px;
+}
+
+.manufacturer {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 476px;
+  margin-top: 35px;
+}
+
+.navigation_320 {
+  display: none;
+}
+
+.navigation__item {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  transition: 0.25s;
+}
+
+.navigation__item:hover {
+  transform: scale(1.25);
+  transition: 0.25s;
+}
+
+.socials {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 164px;
+  margin-top: 37px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .banner {
+    max-width: 678px;
+  }
+
+  .menu-with-arrow {
+    display: none;
+  }
+
+  .banner > .brand {
+    display: none;
+  }
+
+  .banner > .image {
+    display: none;
+  }
+
+  .cart-search-and-links {
+    display: none;
+  }
+
+  .menu-and-brand-768 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: flex-start;
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  .menu__item {
+    margin-right: 35px;
+    margin-bottom: 0;
+  }
+
+  .brand {
+    margin-top: 100px;
+    margin-left: 84px;
+  }
+
+  .brand__name {
+    font-size: 98px;
+    line-height: 100%;
+    margin-top: 0;
+  }
+
+  .menu-and-brand-768 > .icon-button {
+    margin-top: 53px;
+  }
+
+  .image-buttons-and-links-768 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    align-self: stretch;
+    justify-content: flex-start;
+    margin-top: 37px;
+    margin-bottom: 10px;
+  }
+
+  .cart-and-search {
+    flex-flow: row-reverse nowrap;
+    width: 100%;
+  }
+
+  .image-buttons-and-links-768 > .cart-and-search > .icon-button {
+    margin-left: 35px;
+    margin-bottom: 0;
+  }
+
+  .image {
+    margin-left: 37px;
+    align-self: stretch;
+  }
+
+  .links {
+    flex-flow: row-reverse nowrap;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .links__item {
+    margin-left: 35px;
+  }
+
+  .section {
+    max-width: 678px;
+  }
+
+  .card-view {
+    flex-flow: row wrap;
+  }
+
+  .card {
+    width: 324px;
+    margin-bottom: 50px;
+  }
+
+  .card__image {
+    height: 349px;
+    overflow: hidden;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+  }
+
+  .section_laptop {
+    display: none;
+  }
+
+  .section_asymmetric-mobile {
+    display: flex;
+  }
+
+  .section_asymmetric-mobile .card {
+    margin-bottom: 0;
+  }
+
+  .section_asymmetric-mobile .card__image {
+    height: auto;
+  }
+
+  .section__title {
+    margin-top: 100px;
+  }
+
+  .card-view {
+    margin-top: 60px;
+  }
+
+  .card_bottom {
+    align-self: flex-end;
+  }
+
+  .new-collection {
+    max-width: 678px;
+    margin-top: 50px;
+  }
+
+  .new-collection__image {
+    display: none;
+  }
+
+  .new-collection__image-mobile {
+    display: flex;
+    max-width: 354px;
+    width: 100%;
+  }
+
+  .new-collection__information {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .new-collection__description {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .new-collection__season {
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+
+  .new-collection__button {
+    padding: 24px 35px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
+
+  .navigation {
+    margin-top: 40px;
+  }
+
+  .socials {
+    margin-top: 40px;
+    width: 177px;
+  }
+}
+@media only screen and (max-device-width: 320px) {
+  .page-title {
+    height: 57px;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .banner_320 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 290px;
+  }
+
+  .top-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .menu__item {
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+
+  .top-menu .icon-button {
+    margin-bottom: 0;
+    margin-left: 25px;
+  }
+
+  .banner_320 .image {
+    display: flex;
+    align-self: center;
+    max-width: 242px;
+    margin: 40px 0 0;
+  }
+
+  .banner_320 .brand {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    max-width: 211px;
+    margin: 30px 0 0;
+  }
+
+  .brand__tagline {
+    margin: 0;
+  }
+
+  .brand__name {
+    font-size: 86px;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .brand__button {
+    padding: 27px 17px;
+    margin: 0 0 50px;
+  }
+
+  .section {
+    max-width: 290px;
+  }
+
+  .section__title {
+    margin-top: 60px;
+  }
+
+  .section__name {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .section__view {
+    display: none;
+  }
+
+  .section__view_320 {
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .card-view {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    max-width: 130px;
+    margin-bottom: 30px;
+  }
+
+  .card__image {
+    height: auto;
+  }
+
+  .section_asymmetric-mobile .card-view {
+    margin-bottom: 40px;
+  }
+
+  .section_asymmetric-mobile .card {
+    margin-bottom: 0;
+  }
+
+  .new-collection {
+    flex-flow: column-reverse nowrap;
+    margin-top: 60px;
+  }
+
+  .new-collection__information {
+    align-items: center;
+    margin: 15px 15px 0 15px;
+  }
+
+  .new-collection__description {
+    margin: 40px 0 0;
+  }
+
+  .new-collection__season {
+    margin: 12px 0 0;
+    font-size: 26px;
+    line-height: 100%;
+  }
+
+  .new-collection__button {
+    margin: 30px 0 40px 0;
+  }
+
+  .footer {
+    margin-top: 60px;
+  }
+
+  .manufacturer {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation_320 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 290px;
+    margin-top: 50px;
+  }
+
+  .navigation_320 .manufacturer {
+    display: flex;
+    flex: 1 0 50%;
+    margin: 0 0 30px;
+  }
+
+  .navigation__item {
+    flex: 1 0 50%;
+    margin: 0 0 30px;
+  }
+
+  .socials {
+    width: 100%;
+    max-width: 290px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+
+  .socials .icon-button {
+    margin-right: 34px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
