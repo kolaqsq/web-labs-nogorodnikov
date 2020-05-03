@@ -1,0 +1,40 @@
+body
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-flow: column nowrap
+  overflow: hidden
+  width: 100vw
+  height: 100vh
+  z-index: 0
+  margin: 0
+
+.foreground
+  position: fixed
+  z-index: 100
+  pointer-events: none
+
+.background
+  position: fixed
+  z-index: 0
+  pointer-events: none
+
+.first
+  animation: roll1 10s linear infinite
+
+.second
+  animation: roll2 10s linear infinite
+
+@-webkit-keyframes roll1
+  from
+    transform: translateX(0)
+
+  to
+    transform: translateX(-100%)
+
+@-webkit-keyframes roll2
+  from
+    transform: translateX(100%)
+
+  to
+    transform: translateX(0)
