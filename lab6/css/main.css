@@ -12,6 +12,8 @@ body {
 
 .foreground {
   position: fixed;
+  width: 100%;
+  height: 100%;
   z-index: 100;
   pointer-events: none;
 }
@@ -19,6 +21,8 @@ body {
 .background {
   position: fixed;
   z-index: 0;
+  height: 100%;
+  width: 100%;
   pointer-events: none;
 }
 
