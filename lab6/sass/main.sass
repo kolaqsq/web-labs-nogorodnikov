@@ -14,31 +14,113 @@ body
   width: 100%
   height: 100%
   z-index: 100
+  box-shadow: 10px 10px 100px 50px inset
   pointer-events: none
+
+.ceiling
+  position: fixed
+  z-index: 90
+  transition: .25s
+
+  &:hover
+    opacity: 0
+    transition: .25s
+
 
 .background
   position: fixed
-  z-index: 0
+  z-index: 10
   height: 100%
   width: 100%
   pointer-events: none
 
 .first
-  animation: roll1 10s linear infinite
+  animation: roll-first 20s linear infinite
 
 .second
-  animation: roll2 10s linear infinite
+  animation: roll-second 20s linear infinite
 
-@-webkit-keyframes roll1
+
+.walk-animation
+  position: fixed
+  height: 100%
+  width: 100%
+  pointer-events: none
+
+.frame-1
+  animation: walk-1 2s linear infinite
+
+.frame-2
+  animation: walk-2 2s linear infinite
+
+.frame-3
+  animation: walk-3 2s linear infinite
+
+.frame-4
+  animation: walk-4 2s linear infinite
+
+@-webkit-keyframes roll-first
   from
     transform: translateX(0)
 
   to
     transform: translateX(-100%)
 
-@-webkit-keyframes roll2
+@-webkit-keyframes roll-second
   from
     transform: translateX(100%)
 
   to
     transform: translateX(0)
+
+@keyframes walk-1
+  0%, 24%
+    z-index: 20
+
+  25%, 49%
+    z-index: 0
+
+  50%, 74%
+    z-index: 0
+
+  75%, 100%
+    z-index: 0
+
+@keyframes walk-2
+  0%, 24%
+    z-index: 0
+
+  25%, 49%
+    z-index: 20
+
+  50%, 74%
+    z-index: 0
+
+  75%, 100%
+    z-index: 0
+
+@keyframes walk-3
+  0%, 24%
+    z-index: 0
+
+  25%, 49%
+    z-index: 0
+
+  50%, 74%
+    z-index: 20
+
+  75%, 100%
+    z-index: 0
+
+@keyframes walk-4
+  0%, 24%
+    z-index: 0
+
+  25%, 49%
+    z-index: 0
+
+  50%, 74%
+    z-index: 0
+
+  75%, 100%
+    z-index: 20

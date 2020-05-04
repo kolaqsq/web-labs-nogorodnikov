@@ -10,7 +10,7 @@
         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
         width="1920"
-        height="100%"
+        height="1080"
         preserveAspectRatio="none"
         viewBox="0 0 508.00001 285.74999"
         version="1.1"
@@ -36,8 +36,8 @@
             inkscape:pageopacity="0.0"
             inkscape:pageshadow="2"
             inkscape:zoom="0.35"
-            inkscape:cx="288.69924"
-            inkscape:cy="894.08737"
+            inkscape:cx="1291.9712"
+            inkscape:cy="575.54181"
             inkscape:document-units="mm"
             inkscape:current-layer="layer1"
             showgrid="false"
@@ -56,7 +56,7 @@
                 <dc:format>image/svg+xml</dc:format>
                 <dc:type
                         rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-                <dc:title></dc:title>
+                <dc:title/>
             </cc:Work>
         </rdf:RDF>
     </metadata>
@@ -65,6 +65,13 @@
             inkscape:groupmode="layer"
             id="layer1"
             transform="translate(0,-11.250015)">
+        <rect
+                style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.51518667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                id="rect950"
+                width="579.05957"
+                height="477.14285"
+                x="-22.678572"
+                y="-82.999992"/>
         <path
                 style="fill:#000000;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
                 d="m 0,225.37178 511.01934,3.74177 v 3.74178 L -1.6036172,228.57901 Z"
