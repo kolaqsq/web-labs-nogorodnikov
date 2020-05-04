@@ -1,3 +1,69 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+body header {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
 
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  align-self: center;
+  margin-top: 35px;
+}
+.menu-part {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-item, .menu-divider {
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 13pt;
+  line-height: 1.2;
+  color: #4d4959;
+}
+.menu-item:after, .menu-divider:after {
+  display: flex;
+  content: "";
+  width: 0;
+  margin-left: 50%;
+  height: 1.5pt;
+  background-color: #4d4959;
+  transition: 0.25s;
+}
+.menu-item:hover:after {
+  width: 100%;
+  margin: 0;
+  transition: 0.25s;
+}
+.menu-divider {
+  margin: 0 40px;
+}
+.menu-logo {
+  display: flex;
+  margin: 0 65px;
+}
+
+.header-background {
+  width: inherit;
+}
+.header-background-image {
+  width: inherit;
+}
 
 /*# sourceMappingURL=main.css.map */
