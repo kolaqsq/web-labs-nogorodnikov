@@ -22,6 +22,7 @@ body {
 .ceiling {
   position: fixed;
   z-index: 90;
+  width: 47.65625%;
   transition: 0.25s;
 }
 .ceiling:hover {
