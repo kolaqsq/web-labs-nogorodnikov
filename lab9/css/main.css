@@ -265,6 +265,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 270px;
+  cursor: pointer;
   transition: 0.25s;
 }
 .card:hover {
