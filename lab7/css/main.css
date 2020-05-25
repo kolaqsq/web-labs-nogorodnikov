@@ -1,3 +1,121 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 900px 500px 515px 515px;
+  grid-template-areas: "header header header header" "gallery-photo-1 gallery-photo-1 gallery-sign gallery-sign" "gallery-photo-2 gallery-photo-3 gallery-photo-4 gallery-photo-5" "gallery-sign-instagram gallery-sign-instagram gallery-photo-6 gallery-spacer";
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  height: 100%;
+}
 
+div {
+  border: 1px solid blue;
+}
+
+.header {
+  grid-area: header;
+  position: relative;
+  background: url("../img/header.png") right center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+.header-effect {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.header .icon-and-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5.5% 14.6875% 0 14.6875%;
+}
+.header .menu-button {
+  z-index: 10;
+  transition: 0.25s;
+}
+.header .menu-button:hover {
+  transform: scale(1.25);
+  transition: 0.25s;
+}
+.header h1 {
+  font-weight: 300;
+  font-size: 72px;
+  margin: 12.5% 0 0 14.6875%;
+}
+.header h2 {
+  font-weight: 300;
+  font-size: 30px;
+  margin: 1.6875% 0 0 14.6875%;
+}
+
+.gallery-photo-1 {
+  grid-area: gallery-photo-1;
+  background: url("../img/gallery-photo-1.png") right center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.gallery-photo-2 {
+  grid-area: gallery-photo-2;
+  background: url("../img/gallery-photo-2.png") right center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.gallery-photo-3 {
+  grid-area: gallery-photo-3;
+  background: url("../img/gallery-photo-3.png") right center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.gallery-photo-4 {
+  grid-area: gallery-photo-4;
+  background: url("../img/gallery-photo-4.png") right center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.gallery-photo-5 {
+  grid-area: gallery-photo-5;
+  background: url("../img/gallery-photo-5.png") right center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.gallery-photo-6 {
+  grid-area: gallery-photo-6;
+  background: url("../img/gallery-photo-6.png") right center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.gallery-sign {
+  grid-area: gallery-sign;
+  background-color: #f3f1ef;
+}
+.gallery-sign h3 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 14.125% 0 0 7.125%;
+}
+.gallery-sign p {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 5.125% 0 0 7.125%;
+}
+
+.gallery-sign-instagram {
+  grid-area: gallery-sign-instagram;
+}
+
+.gallery-spacer {
+  grid-area: gallery-spacer;
+  background-color: #3f729b;
+}
 
 /*# sourceMappingURL=main.css.map */
