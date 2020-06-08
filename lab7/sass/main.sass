@@ -8,14 +8,11 @@ $font-weights: ("light": 300, "regular": 400, "bold": 700)
 body
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
-  grid-template-rows: 900px 500px 515px 515px
+  grid-template-rows: 900px 500px 515px 515px 500px 400px 515px 400px
   grid-template-areas: $row-1 $row-2 $row-3 $row-4
   margin: 0
   font-family: 'Fira Sans', sans-serif
   height: 100%
-
-div
-  border: 1px solid blue
 
 .header
   grid-area: header
@@ -44,7 +41,7 @@ div
     transition: .25s
 
     &:hover
-      transform: scale(1.25)
+      transform: scale(1.05)
       transition: .25s
 
   h1
@@ -93,6 +90,16 @@ div
   object-fit: cover
   background-size: cover
 
+.gallery-photo-7
+  grid-row-start: 5
+  grid-row-end: 7
+  grid-column-start: 1
+  grid-column-end: 5
+  background: url('../img/gallery-photo-7.png') right center no-repeat
+  object-fit: cover
+  background-size: cover
+  z-index: 0
+
 .gallery-sign
   grid-area: gallery-sign
   background-color: #f3f1ef
@@ -108,10 +115,171 @@ div
     margin: (41 / 800 * 100%) 0 0 (57 / 800 * 100%)
 
 
-
 .gallery-sign-instagram
   grid-area: gallery-sign-instagram
+  background-color: #3f729b
+  color: white
+  font-family: 'Fira Sans', sans-serif
 
-.gallery-spacer
+  h3
+    font-weight: map_get($font-weights, "bold")
+    text-transform: uppercase
+    font-size: 24px
+    margin: (124 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+  p
+    font-weight: map_get($font-weights, "light")
+    font-size: 36px
+    margin: (43 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+
+  button
+    font-weight: map_get($font-weights, "bold")
+    font-size: 18px
+    text-transform: uppercase
+    color: white
+    border: 1px solid white
+    height: 56px
+    width: 280px
+    border-radius: 28px
+    background: none
+    transition: .25s
+    margin: (37 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+    &:hover
+      transform: scale(1.05)
+      transition: .25s
+
+.gallery-sign-music
+  grid-row-start: 5
+  grid-row-end: 6
+  grid-column-start: 2
+  grid-column-end: 3
+  background-color: #212227
+  z-index: 100
+  font-family: "Fira Sans", sans-serif
+  color: #2ebd59
+
+  h3
+    line-height: 32px
+    text-transform: uppercase
+    font-weight: map_get($font-weights, 'regular')
+    margin: (140 / 400 * 100%) 0 0 (59 / 400 * 100%)
+
+  p
+    font-size: 14px
+    line-height: 21px
+    color: white
+    font-weight: map_get($font-weights, 'regular')
+    margin: (41 / 400 * 100%) 0 0 (59 / 400 * 100%)
+
+  button
+    line-height: 32px
+    font-size: 18px
+    font-weight: map_get($font-weights, 'bold')
+    text-transform: uppercase
+    border: 1px solid #2ebd59
+    color: #2ebd59
+    background: none
+    height: 48px
+    width: 176px
+    border-radius: 24px
+    margin: (52 / 400 * 100%) 0 0 (59 / 400 * 100%)
+    transition: .25s
+
+    &:hover
+      transform: scale(1.05)
+      transition: .25s
+
+.gallery-sign-spotify
+  grid-row-start: 7
+  grid-row-end: 8
+  grid-column-start: 1
+  grid-column-end: 3
+  background-color: #2ebd59
+  color: white
+  font-family: "Fira Sans", sans-serif
+
+  h3
+    font-weight: map_get($font-weights, "bold")
+    text-transform: uppercase
+    font-size: 24px
+    margin: (124 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+  p
+    font-weight: map_get($font-weights, "light")
+    font-size: 36px
+    margin: (43 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+  button
+    font-weight: map_get($font-weights, "bold")
+    font-size: 18px
+    text-transform: uppercase
+    color: white
+    border: 1px solid white
+    height: 56px
+    width: 280px
+    border-radius: 28px
+    background: none
+    transition: .25s
+    margin: (37 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+    &:hover
+      transform: scale(1.05)
+      transition: .25s
+
+.gallery-sign-itunes
+  grid-row-start: 7
+  grid-row-end: 8
+  grid-column-start: 3
+  grid-column-end: 5
+  background-color: #282b2f
+  color: white
+  font-family: "Fira Sans", sans-serif
+
+  h3
+    font-weight: map_get($font-weights, "bold")
+    text-transform: uppercase
+    font-size: 24px
+    margin: (124 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+  p
+    font-weight: map_get($font-weights, "light")
+    font-size: 36px
+    margin: (43 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+  button
+    font-weight: map_get($font-weights, "bold")
+    font-size: 18px
+    text-transform: uppercase
+    color: white
+    border: 1px solid white
+    height: 56px
+    width: 280px
+    border-radius: 28px
+    background: none
+    transition: .25s
+    margin: (37 / 800 * 100%) 0 0 (211 / 800 * 100%)
+
+    &:hover
+      transform: scale(1.05)
+      transition: .25s
+
+.gallery-spacer-1
   grid-area: gallery-spacer
   background-color: #3f729b
+
+.gallery-spacer-2
+  grid-row-start: 5
+  grid-row-end: 7
+  grid-column-start: 1
+  grid-column-end: 2
+  background-color: #282b2f
+  z-index: 100
+
+.gallery-spacer-3
+  grid-row-start: 8
+  grid-row-end: 9
+  grid-column-start: 1
+  grid-column-end: 5
+  background-color: #212227
